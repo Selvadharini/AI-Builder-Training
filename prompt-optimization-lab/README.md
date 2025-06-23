@@ -55,9 +55,11 @@ Keep responses concise, accurate, and relevant.
 ##### CoT-Enhanced Prompt Response:
 ```
 I understand you're looking to downgrade — happy to assist:
-* Downgrades are scheduled to apply at the end of your current billing cycle.
-* You will continue to have access to your current plan until then.
-* No immediate changes or feature restrictions are applied upon downgrade request. If you’d like help initiating the downgrade or need to check your billing cycle dates, I’m here to assist!
+
+Downgrades are scheduled to apply at the end of your current billing cycle.
+You will continue to have access to your current plan until then.
+No immediate changes or feature restrictions are applied upon downgrade request.
+If you’d like help initiating the downgrade or need to check your billing cycle dates, I’m here to assist!
 ```
 
 
@@ -68,7 +70,8 @@ I understand you're looking to downgrade — happy to assist:
 ##### Refined Prompt Response:
     Thanks for reaching out! 
 
-    Refunds are available only for billing errors reported within 7 days of the transaction. I’m sorry to hear about the unexpected charge. If you would like a copy of your invoice or payment information for reference. Let me know how you would prefer to continue.
+    Refunds are available only for billing errors reported within 7 days of the transaction. I’m sorry to hear about the unexpected charge. 
+    If you would like a copy of your invoice or payment information for reference. Let me know how you would prefer to continue.
 
 
 ##### CoT-Enhanced Prompt Response:
