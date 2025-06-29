@@ -1,0 +1,21 @@
+---
+config:
+  layout: fixed
+  theme: redux-dark
+  look: neo
+---
+flowchart TB
+    A["<b>Ingest</b><br>Watch Git events (push, PR, image)"] --> B["<b>Reason</b><br>Choose next step/tool"]
+    B --> C["<b>Act</b><br>Trigger CI/CD<br>Update Helm<br>Invoke ArgoCD"]
+    C --> D["<b>Observe</b><br>Capture success/failure"]
+    D --> E["<b>Loop</b><br>Repeat until done or escalate"]
+    E --> B
+    n1["Predicted WorkFlow"]
+    A@{ shape: rounded}
+    B@{ shape: rounded}
+    C@{ shape: event}
+    n1@{ shape: text}
+    style B stroke:#FFE0B2
+    style C stroke:#BBDEFB
+    style D stroke:#FFCDD2
+    style E stroke:#E1BEE7

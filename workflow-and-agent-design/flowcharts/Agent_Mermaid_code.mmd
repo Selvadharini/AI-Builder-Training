@@ -1,0 +1,27 @@
+---
+config:
+  layout: fixed
+  theme: redux-dark
+---
+flowchart TB
+    A["<b>Ingest</b> 
+    Capture event (e.g., code push, PR, image release)"] --> B["<b>Thought</b>
+    Build chain-of-thought to plan next steps"]
+    B --> C["<b>Decide</b><br>Select tool/operation ( CI, Helm, ArgoCD )"]
+    C --> D["<b>Act</b> <br>Execute action ( Update Chart, ArgoCD Deploy )"]
+    D --> E["<b>Observe</b><br>Gather success/failure feedback"]
+    E --> F{"Success"}
+    F -- No --> G["<b>Loop</b><br>Rethink &amp; Fix"]
+    G --> B
+    F -- Yes --> H["<b>End</b><br>Terminate &amp; record outcome"]
+    n1["<b>Agents Flow</b>"]
+    n1@{ shape: text}
+    style A stroke:#C8E6C9
+    style B stroke:#FFF9C4
+    style C stroke:#C8E6C9
+    style D stroke:#BBDEFB
+    style E stroke:#FFE0B2
+    style F stroke:#FFF9C4
+    style G stroke:#E1BEE7
+    style H stroke:#C8E6C9
+
