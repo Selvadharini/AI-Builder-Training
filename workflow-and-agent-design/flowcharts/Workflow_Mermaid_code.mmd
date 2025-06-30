@@ -2,20 +2,23 @@
 config:
   layout: fixed
   theme: redux-dark
-  look: neo
+  look: classic
 ---
 flowchart TB
-    A["<b>Ingest</b><br>Watch Git events (push, PR, image)"] --> B["<b>Reason</b><br>Choose next step/tool"]
-    B --> C["<b>Act</b><br>Trigger CI/CD<br>Update Helm<br>Invoke ArgoCD"]
+    A["<b>Ingest</b><br>Trigger based on Git events"] --> B["<b>Reason</b><br>Looks for predefined steps based on scripts"]
+    B --> C["<b>Act</b><br>Perform series of checks, Smoke test and Release"]
     C --> D["<b>Observe</b><br>Capture success/failure"]
     D --> E["<b>Loop</b><br>Repeat until done or escalate"]
     E --> B
-    n1["Predicted WorkFlow"]
+    n1@{ label: "<p data-pm-slice=\"1\"><br></p>" }
+    n2["<b>Predictable WorkFlow</b>"]
     A@{ shape: rounded}
     B@{ shape: rounded}
     C@{ shape: event}
     n1@{ shape: text}
-    style B stroke:#FFE0B2
-    style C stroke:#BBDEFB
-    style D stroke:#FFCDD2
-    style E stroke:#E1BEE7
+    n2@{ shape: text}
+    style A stroke:#C8E6C9
+    style B stroke:#FFF9C4
+    style C stroke:#C8E6C9
+    style D stroke:#BBDEFB
+    style E stroke:#FFE0B2

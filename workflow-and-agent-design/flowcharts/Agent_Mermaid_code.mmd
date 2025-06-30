@@ -5,15 +5,15 @@ config:
 ---
 flowchart TB
     A["<b>Ingest</b> 
-    Capture event (e.g., code push, PR, image release)"] --> B["<b>Thought</b>
-    Build chain-of-thought to plan next steps"]
-    B --> C["<b>Decide</b><br>Select tool/operation ( CI, Helm, ArgoCD )"]
-    C --> D["<b>Act</b> <br>Execute action ( Update Chart, ArgoCD Deploy )"]
+    Capture Git events"] --> B["<b>Thought</b>
+<br>Build chain-of-thought for deployment, <br>choosing steps based on context.<br>"]
+    B --> C["<b>Decide</b><br>Select tool/operation ( SAST, DAST, Helm ArgoCD )"]
+    C --> D["<b>Act</b> <br>Execute series of stages <br>( Security Checks, Scan, Deploy)"]
     D --> E["<b>Observe</b><br>Gather success/failure feedback"]
     E --> F{"Success"}
-    F -- No --> G["<b>Loop</b><br>Rethink &amp; Fix"]
+    F -- No --> G["<b>Loop</b><br>Rethink &amp; Fix erros with Solutions"]
     G --> B
-    F -- Yes --> H["<b>End</b><br>Terminate &amp; record outcome"]
+    F -- Yes --> H["<b>End Process</b><br>Records outcome"]
     n1["<b>Agents Flow</b>"]
     n1@{ shape: text}
     style A stroke:#C8E6C9
