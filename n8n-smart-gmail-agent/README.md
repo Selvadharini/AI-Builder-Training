@@ -14,17 +14,17 @@ Eg - "URGENT: Our API integration is down and affecting our production systems. 
 
 #### Agent Flow Summary
 
-## 1. Classify Request
+##### 1. Classify Request
 - Use an AI node to label incoming text as `customer` or `admin`
 - `Customer` → product, billing, support, sales, feature requests  
 - `Admin` → technical failures, outages, security, data, integrations  
 
-## 2. Select Support Contact
+##### 2. Select Support Contact
 1. Call `GetUsers`tool → returns an array of user objects.
 2. Filter by role == classification
 3. Pick the any user match based on request classification.
 
-## 3. Notify Support & Confirm to User
+##### 3. Notify Support & Confirm to User
 1. Call `SendEmail` with `emailRecipient`, `subject` and `emailBody`
 2. Send the user a confirmation message to user.
 
