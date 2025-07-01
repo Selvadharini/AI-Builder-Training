@@ -14,7 +14,7 @@ Eg - "URGENT: Our API integration is down and affecting our production systems. 
 
 #### Agent Flow Summary
 
-# Smart Gmail Agent – Implementation Summary
+##### Smart Gmail Agent – Implementation Summary
 
 ## 1. Classify Request
 - Use an AI node to label incoming text as `customer` or `admin`
