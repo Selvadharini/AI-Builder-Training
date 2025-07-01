@@ -20,13 +20,13 @@ Eg - "URGENT: Our API integration is down and affecting our production systems. 
 - `Admin` → technical failures, outages, security, data, integrations  
 
 ##### 2. Select Support Contact
-1. Call `GetUsers`tool → returns an array of user objects.
-2. Filter by role == classification
-3. Pick the any user match based on request classification.
+- Call `GetUsers`tool → returns an array of user objects.
+- Filter by role == classification
+- Pick the any user match based on request classification.
 
 ##### 3. Notify Support & Confirm to User
-1. Call `SendEmail` with `emailRecipient`, `subject` and `emailBody`
-2. Send the user a confirmation message to user.
+- Call `SendEmail` with `emailRecipient`, `subject` and `emailBody`
+- Send the user a confirmation message to user.
 
 
 
