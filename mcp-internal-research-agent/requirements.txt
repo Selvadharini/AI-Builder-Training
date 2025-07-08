@@ -1,0 +1,13 @@
+requests
+langchain
+langchain-chroma
+google-auth
+google-api-python-client
+chromadb
+faiss-cpu
+google-cloud-aiplatform
+serpapi
+flask
+requests>=2.31.0
+PyPDF2
+protobuf==3.20.3

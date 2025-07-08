@@ -1,0 +1,8 @@
+.DS_Store
+google_creds.json
+venv/
+.env
+.env.local
+.env.*.local
+.chromadb/
+
